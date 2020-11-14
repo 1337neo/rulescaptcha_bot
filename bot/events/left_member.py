@@ -35,7 +35,8 @@ def handle(update, ctx):
             message_id=result[0]['message_id']
         )
     except Exception as e:
-        # Maybe captcha was solved and the message was deleted already?
+        # An exception could occur if welcome_message was disabled
+        # Thee would be no message to delete
         print("Deleting initial message failed: ")
         print(str(e))
 

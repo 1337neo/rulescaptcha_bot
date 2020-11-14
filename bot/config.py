@@ -6,7 +6,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 BOT_USERNAME = os.getenv('BOT_USERNAME')
 RULES_URI = os.getenv('RULES_URI')
 RULES_URI_HUMAN = os.getenv('RULES_URI_HUMAN')
-ENABLE_WELCOME_MSG = bool(os.getenv('ENABLE_WELCOME_MSG'))
+ENABLE_WELCOME_MSG = bool(int(os.getenv('ENABLE_WELCOME_MSG')))
 
 WELCOME_MSG = ('Hello {username}, welcome to the group. You have been muted.'
                '\nPlease follow the instructions to unmute yourself.')

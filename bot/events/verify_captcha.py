@@ -68,6 +68,7 @@ def resolve(update, ctx):
             message_id=result[0]['message_id']
         )
     except Exception as e:
+        # Exception is raised if welcome message is disabled
         print("deleting initial message after verify failed: ")
         print(str(e))
 
