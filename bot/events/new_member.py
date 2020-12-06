@@ -46,9 +46,7 @@ def handle(update, ctx):
         {
             "group_id": group_id,
             "user_id": user_id,
-            "solved": False,
-            "valid_answer": None,
-            "message_id": msgid
+            "message_id": msg.message_id
         },
         (
             (User.group_id == group_id) & (User.user_id == user_id)
